@@ -2,12 +2,11 @@ const inputEl = document.querySelector('input');
 const buttonEl = document.querySelector('button');
 const timerEl = document.querySelector('span');
 
-let createTimerAnimatorHandler = null
-console.log(createTimerAnimatorHandler);
+let activeTimer = null
 // Напишите реализацию createTimerAnimator
 // который будет анимировать timerEl
 const createTimerAnimator = () => {  
-  return (seconds) => {createTimerAnimatorHandler = setInterval(function() {
+  return (seconds) => {activeTimer = setInterval(function() {
       let formattedSeconds = seconds % 60
       let minutes = seconds /60 % 60
       let hours = seconds / 60 / 60 % 60
@@ -23,7 +22,7 @@ const createTimerAnimator = () => {
         formattedHours = `0${formattedHours}`;
       };
       if (seconds <= 0) {
-        clearInterval(createTimerAnimatorHandler);
+        clearInterval(activeTimer);
         timerEl.innerHTML = `00:00:00`;
         alert('Время закончилось')
       } else {
@@ -51,8 +50,8 @@ inputEl.addEventListener('input', (event) => {
 });
 
 buttonEl.addEventListener('click', () => {
-  if (createTimerAnimatorHandler !== null) {
-    clearInterval(createTimerAnimatorHandler)
+  if (activeTimer !== null) {
+    clearInterval(activeTimer)
   }
   const seconds = Number(inputEl.value);
   animateTimer(seconds);
