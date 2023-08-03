@@ -1,0 +1,625 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+h1,h2,h3,h4,p,
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+article > * + * {
+    margin-top: 1em;
+  }
+input,button,textarea,
+select {
+  font: inherit;
+}
+.background {
+  z-index: -1;
+}
+.red__light {
+  position: absolute;
+  top: -100px;
+}
+.blue__light {
+  position: absolute;
+  right: 250px;
+}
+.background__ball {
+  position: absolute;
+}
+.background__ball_red {
+  left: 500px;
+  top: 80px;
+}
+.background__ball_purple {
+  right: 550px;
+}
+
+.background__ball_small {
+top: 547px;
+left: 851px;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: black;
+  font-family:'Inter';
+  margin: 0;
+}
+
+  
+.menu a {
+    text-decoration: none;
+    color: white;
+  }
+.menu__item {
+  white-space: nowrap;
+  margin-left: 20px;
+  position: relative;
+  font-size: 16px;
+}
+
+.logo_CRM {
+    font-size: 10px;
+    color: #E4E5EA;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    margin-left: 32px;
+}
+.logo {
+  width: 165px;
+  padding-top: 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.menu__item_call {
+    margin-left: 137px;
+}
+.icon {
+    display: flex;
+    margin-left: 50px;
+}
+.icon_viber {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.main {
+  color: #E4E5EA;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+}
+
+.container__welbex_medium {
+font-weight: 400;
+width: 362px;
+font-size: 48px;
+line-height: 58.09px;
+}
+.container__welbex_big {
+font-weight: 900;
+font-size: 48px;
+width: 247px;
+line-height: 58.09px;
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+background-image: linear-gradient(to right, #FCB045, #FF3F78);
+}
+.container__welbex_free {
+background: #FCB045;
+background: -webkit-linear-gradient(to right, #FCB045 0%, #FD1D1D 36%);
+background: -moz-linear-gradient(to right, #FCB045 0%, #FD1D1D 36%);
+background: linear-gradient(to right, #FCB045 0%, #FD1D1D 36%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 700;
+text-transform: uppercase;
+}
+.container__welbex_consultation {
+background: #FCB045;
+background: -webkit-linear-gradient(to right, #FCB045 79%, #FD1D1D 100%);
+background: -moz-linear-gradient(to right, #FCB045 79%, #FD1D1D 100%);
+background: linear-gradient(to right, #FCB045 79%, #FD1D1D 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 700;
+text-transform: uppercase;
+}
+.content__weblex_consultation {
+  width: 291px;
+  font-weight: 500;
+  line-height: 21.78px;
+}
+
+.container__welbex_small {
+  margin-top: 20px;
+  width: 275px;
+  font-family: 'Montserrat';
+}
+
+.content__weblex_right {
+  font-size: 18px;
+  text-align: right;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  justify-content: flex-end;
+  display: flex;
+}
+.subtitle {
+  font-size: 14px;
+  font-weight: 200;
+  justify-content: flex-end;
+  display: flex;
+  font-family: 'Montserrat';
+}
+
+.content__weblex_second {
+flex-direction: row;
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+width: 300px;
+}
+.content__weblex_mobile {
+  display: none;
+}
+.block__info {
+  margin-top: 30px;
+  width: 135px;
+  margin-left: 15px;
+}
+
+.button__consultation {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 14px;
+  background-color: #4077F3;
+  color: #E4E5EA;
+  border: none;
+  cursor: pointer;
+}
+
+.aside a {
+  text-decoration: none;
+  color: white;
+}
+.footer__title {
+  color: #656566;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.information__block {
+  font-weight: 400;
+}
+.footer {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 150px;
+}
+
+.aside__menu {
+  flex-flow: column wrap;
+  display: flex;
+  height: 130px;
+  margin-right: 340px;
+}
+.aside__item_price {
+  width: 144px;
+  margin-right: 50px;
+}
+.aside__item_services {
+  width: 53px;
+}
+.aside__item_widgets {
+  width: 73px;
+}
+.aside__item_integration {
+  width: 94px;
+}
+.aside__item_client {
+  width: 115px;
+}
+.aside__item_letters {
+  width: 212px;
+}
+.aside__item_case {
+  width: 50px;
+}
+.aside__item_certificates{
+  width: 107px;
+}
+.aside__item_blog {
+  width: 127px;
+}
+.aside__item_answer {
+  width: 120px;
+}
+.information__block_menu {
+  margin-right: 0px;
+}
+.aside__item_number {
+  margin-bottom: 5px;
+}
+.aside__item {
+  height: 19px;
+  line-height: 19.36px;
+  margin-top: 5px;
+}
+.aside__item_mobile {
+  display: none;
+}
+
+.aside__contacts {
+  text-align: right;
+}
+
+.information__block_contacts {
+  text-align: right;
+}
+.information__block_company {
+  width: 300px;
+}
+.icon__second_viber {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.icon__second {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 321px) {
+
+.image {
+  display: none;
+}
+.logo {
+  display: none;
+}
+.icon {
+  display: none;
+}
+.logo_CRM {
+  display: none;
+}
+.menu {
+  margin-left: 16px;
+  margin-right: 0px;
+
+}
+.menu__item {
+  white-space: nowrap;
+  position: relative;
+  font-size: 12px;
+  margin-right: 20px;
+  margin-left: 0;
+  text-decoration: none;
+}
+.header {
+  padding: 0;
+}
+.menu__item_call {
+  display: none;
+}
+.menu__item_certificates {
+  display: none;
+}
+.main {
+  flex-direction: column;
+  display: flex;
+  background: url('../img/bg.png');
+  padding-left: 16px;
+  padding-top: 40px;
+  padding-right: 0;
+}
+.button__consultation {
+  display: none;
+}
+.container__welbex_medium {
+  font-weight: 400;
+  height: 88px;
+  width: 272px;
+  font-size: 36px;
+  line-height: 43.57px;
+  }
+.container__welbex_big {
+  font-weight: 900;
+  font-size: 36px;
+  height: 44px;
+  width: 186px;
+  line-height: 43.57px;
+}
+.container__welbex_small {
+  margin-top: 15px;
+  height: 44px;
+  width: 271px;
+  font-size: 18px;
+  line-height: 21.94px;
+}
+.content__weblex_right {
+  font-size: 18px;
+  text-align: left;
+}
+.container__welbex_free {
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+background-image: linear-gradient(to right, #FCB045, #FD1D1D);
+text-transform: lowercase;
+}
+.container__welbex_consultation {
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+background-image: linear-gradient(to right, #FCB045, #FD1D1D);
+text-transform: lowercase;
+}
+    
+.content__weblex_consultation {
+  width: 272px;
+  height: 44px;
+  font-weight: 700;
+  line-height: 21.78px;
+  margin-top: 40px;
+}
+.subtitle {
+  display: none;
+}
+.title {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  height: 40px;
+  justify-content: flex-start;
+  display: flex;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+.content__weblex_second {
+  display: none;
+}
+.content__weblex_mobile {
+display: flex;
+text-transform: uppercase;
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 13px;
+line-height: 15.85px;
+flex-wrap: wrap;
+margin-top: 15px;
+margin-bottom: 50px;
+}
+.block__mobile {
+  display: flex;
+  align-items: center;
+}
+.dash {
+  width: 10px;
+  background-image: linear-gradient(to right, #FCB045, #FD1D1D);
+  height: 1px;
+  margin-right: 5px;
+}
+.mobile__title {
+  height: 16px;
+}
+.mobile__title_skype {
+  width: 99px;
+  margin-right: 5px;
+}
+.mobile__title_widgets {
+  width: 107px;
+}
+.mobile__title_dashboard {
+  width: 94px;
+  margin-right: 10px;
+}
+.mobile__title_days {
+  width: 126px;
+}
+.block__mobile_dashboard {
+  margin-top: 10px;
+}
+.block__mobile_days {
+  margin-top: 10px;
+}
+.footer {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 16px;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.footer__title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+}
+.aside a {
+ font-size: 14px;
+}
+.information__block_contacts {
+  text-align: left;
+}
+.aside__contacts {
+  text-align: left;
+}
+.icon__second_viber {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.icon__second {
+  justify-content: flex-start;
+}
+.aside__item_mobile {
+  display: flex;
+}
+.aside__item_letters {
+  display: none;
+}
+.aside__item {
+ line-height: 16.94px;
+ font-weight: 400;
+ margin-top: 5px;
+}
+.aside__item_price {
+  width: 75px;
+  height: 34px;
+}
+.aside__item_services {
+  width: 47px;
+  height: 17px;
+}
+.aside__item_widgets {
+  width: 64px;
+  height: 17px;
+}
+.aside__item_integration {
+  width: 82px;
+  height: 17px;
+}
+.aside__item_client {
+  width: 100px;
+  height: 17px;
+}
+.aside__item_mobile {
+  width: 123px;
+  height: 34px;
+}
+.aside__item_case {
+  width: 44px;
+  height: 17px;
+}
+.aside__item_certificates{
+  width: 93px;
+  height: 17px;
+}
+.aside__item_blog {
+  width: 111px;
+  height: 17px;
+}
+.aside__item_answer {
+  width: 105px;
+  height: 17px;
+}
+.information__block_menu {
+  margin-right: 0px;
+}
+.aside__item_number {
+  line-height: 19.36px;
+  margin-bottom: 5px;
+}
+}
+@media (min-width:321px) and (max-width:800px) {
+  .logo {
+    display: none;
+  }
+  .menu__item_call {
+    display: none;
+  }
+  .header {
+    padding-top: 50px;
+  }
+  .menu {
+    margin: 0;
+    margin-right: 50px;
+  }
+  .icon {
+    margin: 0;
+  }
+  .container__welbex_big {
+    font-size: 36px;
+  }
+  .container__welbex_medium {
+    font-size: 36px;
+  }
+  .main {
+    padding-left: 100px;
+  }
+  .footer {
+    padding-left: 100px;
+  }
+  .aside a {
+    font-size: 12px;
+  }
+  .footer__title {
+    font-size: 12px;
+  }
+  .aside__item_price {
+    width: 144px;
+    margin-right: 0px; 
+  }
+  .information__block_menu {
+    width: 125px;
+  }
+  .information__block_company {
+    width: 178px;
+  }
+  .aside__item_adress {
+    width: 140px;
+  }
+  .information__block_contacts {
+    margin-left: 176px;
+  }
+  .container__welbex_medium {
+    line-height: 42px;
+    width: 316px;
+  }
+  .icon_viber {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .container__welbex_big {
+    line-height: 42px;
+  }
+  .block__info {
+    margin-top: 15px;
+  }
+  .content__weblex_consultation {
+    width: 299px;
+  }
+}
